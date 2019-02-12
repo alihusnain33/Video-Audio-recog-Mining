@@ -1,0 +1,45 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="{% static 'profile.css' %}">
+
+    <title>Visually</title>
+  </head>
+  <body>
+	<div class="container">
+		
+		<div class="box a">
+			{{ answer_dependency | safe }}
+		</div>
+
+		<div class="box c">
+			<h5>{{ question.text }}</h5>
+			<img src="{% static 'user.png' %}" width="200px" height="200px">
+			<br>
+			<div style="font-weight: bold">{{ candidate.name }}</div>
+			<br>
+			<span class="grade-badge">{{ grade }}</span>
+		</div>
+
+		<div class="box d">
+			<h5 style="text-align: center">Candidate Answer: Named Entities</h5>
+			<br>
+			{{ answer_markup | safe }}
+		</div>
+
+		<div class="box e">
+			<h5 style="text-align: center">Reference Answer: Named Entities</h5>
+			<br>
+			{{ reference_markup | safe }}
+		</div>
+	</div>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <style>
+    	body {
+		    background: #f6f6f6;
+		    color: #555555;
+		}
+
+		.error {
+		    height: auto;
+		    width: 100%;
+		    padding: 2em;
+		    margin-top: 15;
+		}
+
+		@media(min-width:768px) {
+		    .error {
+		        height: auto;
+		        width: 100%;
+		        padding: 2em;
+		        margin-top: 15vh;
+		    }
+		}
+    </style>
+
+    <title>Not Found</title>
+  </head>
+  <body>
+    <section class="error">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-md-10 col-md-offset-2 text-center">
+	                <i class="far fa-meh fa-10x fa-fw center-block"></i><br />
+	                <p><h2>No answer found for this question.</h2> <br/>
+	                </p>
+	                <p>The page you are looking for does not exist. Check the admin dashboard to make sure you the appropriate records do exist.</p>
+	                <p>Click <a href="{% url 'candidates' %}" class="link">here</a> to go back to the candidates listing. <i class="far fa-smile fa-sm"></i><p>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+  </body>
+</html>

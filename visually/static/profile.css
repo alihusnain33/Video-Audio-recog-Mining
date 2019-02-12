@@ -1,0 +1,76 @@
+:root {
+    --main-color: #4b748e;
+    --background-color: #f6f6f6;
+    --secondary-color: white;
+    --main-text-color: #000000;
+    --secondary-text-color: #b0c7d6;
+    --send-message-form: #F5F5F5;
+}
+
+body {
+	background-color: var(--background-color)
+}
+
+.box {
+	color: var(--main-text-color);
+	display: inline-block;
+}
+
+.a {
+    grid-area: a;
+    overflow: auto;
+}
+
+.b {
+    grid-area: b;
+}
+
+.c {
+    grid-area: c;
+    text-align: center;
+    /*width: 500px;*/
+}
+
+.d {
+    grid-area: d;
+}
+
+.e {
+    grid-area: e;
+}
+
+.f {
+    grid-area: f;
+    /*height: 3vh;*/
+}
+
+.f5 {
+	/*height: 3vh;*/
+	/*line-height: 3vh;*/
+}
+
+.container {
+	display: grid;
+	height: 100vh;
+	grid-template-columns: auto;
+	/*justify-items: stretch;*/
+	grid-template-rows: auto;
+	grid-template-areas: 
+		/*"f f f"*/
+		"a a a"
+		"a a a"
+		"d c e";
+}
+
+.grade-badge {
+	display: inline-block;
+    border: 1px solid #de2031;
+    border-radius: 4px;
+    color: #FFF;
+    padding: .2em;
+    background: #de2031;
+}
+
+/*.e {
+    grid-area: e;
+}*/

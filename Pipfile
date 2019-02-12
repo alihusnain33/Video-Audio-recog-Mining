@@ -1,0 +1,21 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+djangorestframework = "*"
+markdown = "*"
+django-filter = "*"
+django = "*"
+mysqlclient = "*"
+nltk = "*"
+numpy = "*"
+psycopg2-binary = "*"
+django-mysql = "*"
+spacy = "*"
+
+[requires]
+python_version = "3.7"
